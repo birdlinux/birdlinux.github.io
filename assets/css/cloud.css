@@ -244,7 +244,6 @@ img {
 }
 
 .home-box {
-  margin-bottom: 150px;
   border: 1px;
 }
 
@@ -316,9 +315,6 @@ img {
     display: none;
   }
   .sidebar-home {
-    display: none;
-  }
-  .home-box {
     display: none;
   }
   .home-bg {
