@@ -194,7 +194,8 @@ h1 {
 .social {
     background-color: #181e2b;
     display: flex;
-    flex-direction: row; /* Optional: Adjust this if you want the icons to be aligned horizontally */
+    flex-direction: row;
+    /* Optional: Adjust this if you want the icons to be aligned horizontally */
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -233,9 +234,11 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;
 }
-.social-icons > * {
+
+.social-icons>* {
     margin-left: 17.5px;
-    margin-right: 17.5px; /* Adjust the spacing between icons as needed */
+    margin-right: 17.5px;
+    /* Adjust the spacing between icons as needed */
 }
 
 .social-text {
@@ -345,4 +348,177 @@ p {
 
 .img-engine:hover {
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .projects-section {
+        padding: 25px;
+    }
+
+    .social {
+        /* flex-direction: column; */
+        height: 120px;
+        margin-top: -140;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        font-size: 21px;
+    }
+
+    .background-social {
+        margin: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .navbar {
+        display: hidden;
+    }
+
+    .dropdown-content.show {
+        top: 50px;
+        right: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .about-me-wrapper {
+        padding-top: 100px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .black-gradient-h1 {
+        font-size: 48px;
+    }
+
+    .projects-section {
+        padding: 25px;
+    }
+
+    .project {
+        padding: 20px;
+        margin: 50px;
+        max-width: 1000px;
+        min-width: 600px;
+    }
+
+    .left-section {
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .small-caps-subtitle {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .primary-butt {
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .img-engine {
+        height: 150px;
+    }
+
+    .social {
+        padding-bottom: 10px;
+        margin: 50px;
+        margin-top: -40px;
+        max-width: 640px;
+        min-width: 640px;
+        flex-direction: column;
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .project {
+        padding: 20px;
+        margin: 50px;
+        max-width: 700px;
+        min-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        padding-bottom: 10px;
+        margin: 50px;
+        margin-top: -40px;
+        max-width: 700px;
+        min-width: 390px;
+        flex-direction: column;
+        height: 330px;
+    }
+
+    .left-section {
+        order: 2;
+    }
+
+    .img-engine {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .project {
+        padding: 20px;
+        margin: 50px;
+        max-width: 500px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        padding-bottom: 10px;
+        margin: 50px;
+        margin-top: -40px;
+        max-width: 700px;
+        min-width: 340px;
+        flex-direction: column;
+        height: 330px;
+    }
+
+    .left-section {
+        order: 2;
+    }
+
+    .img-engine {
+        order: 1;
+    }
 }
