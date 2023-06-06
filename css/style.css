@@ -497,7 +497,6 @@ p {
 
 @media screen and (max-width: 400px) {
 
-
     .project {
         padding: 20px;
         margin: 50px;
@@ -507,6 +506,7 @@ p {
         flex-direction: column;
         align-items: center;
     }
+    
 
     .social {
         padding-bottom: 10px;
